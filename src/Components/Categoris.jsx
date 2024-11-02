@@ -8,7 +8,7 @@ const Categoris = ({ categories }) => {
                 <h1 className="text-4xl font-bold">Job Category List</h1>
                 <p>Explore thousands of job opportunities with all the information you need. Its your future</p>
             </div>
-            <div className="grid grid-cols-4 my-10">
+            <div className="grid grid-cols-1 lg:grid-cols-4 my-10">
                 {
                     categories.map(categoriy => <Category key={categoriy.id} category={categoriy}></Category>)
                 }

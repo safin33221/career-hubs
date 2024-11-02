@@ -5,11 +5,11 @@ const ApplyJob = ({ job }) => {
     const { id, logo, job_title, company_name, remote_or_onsite, location, salary } = job
     return (
         <div>
-            <div className="flex gap-10 border-2 shadow-lg my-5 py-6 rounded-lg ">
+            <div className="flex flex-col md:flex-row p-8 gap-10 border-2 shadow-lg my-5 py-6 rounded-lg ">
                 <div className="flex justify-center items-center p-3 py-10 m-3 bg-gray-200 rounded-lg ">
                     <img className="" src={logo} alt="" />
                 </div>
-                <div className="flex w-full items-center justify-between space-y-3">
+                <div className="flex flex-col md:flex-row w-full items-center justify-between space-y-3">
                     <div>
                         <h1 className="text-xl font-bold">{job_title}</h1>
                         <p className="text-gray-500">{company_name}</p>
