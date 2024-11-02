@@ -1,7 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import App from './App.jsx'
+
 import {
   createBrowserRouter,
   RouterProvider,
@@ -10,6 +10,7 @@ import Root from './Components/Root.jsx';
 import Statices from './Components/Statices.jsx';
 import Jobs from './Components/Jobs.jsx';
 import Blogs from './Components/Blogs.jsx';
+import JobDetails from './Components/JobDetails.jsx';
 
 
 const router = createBrowserRouter([
@@ -23,12 +24,16 @@ const router = createBrowserRouter([
         loader:()=> fetch('/categories.json')
       },
       {
-        path:'/jobs',
+        path:'/appliedjobs',
         element:<Jobs></Jobs>
       },
       {
         path:'/blogs',
         element:<Blogs> </Blogs>
+      },{
+        path:'/jobs/:id',
+        element:<JobDetails></JobDetails>,
+        loader:()=> fetch("/jobs.json")
       }
     ]
     
