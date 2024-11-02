@@ -1,6 +1,7 @@
 import { useLoaderData } from "react-router-dom";
 import Banner from "./Banner";
 import Categoris from "./Categoris";
+import FetureJobs from "./FetureJobs";
 
 
 const Statices = () => {
@@ -10,6 +11,7 @@ const Statices = () => {
         <div>
             <Banner></Banner>
             <Categoris categories={categories}></Categoris>
+            <FetureJobs></FetureJobs>
         </div>
     );
 };
