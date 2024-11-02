@@ -2,7 +2,7 @@
 
 Welcome to **Career Hub**! 🎓 Your one-stop destination for career guidance, skill development, and job opportunities. This platform provides aspiring professionals with valuable insights and resources to help them navigate their career paths and make informed decisions.
 
-🌐 [Live Demo](https://career-hubs-safin33221.surge.sh/)
+🌐 [Live Demo](https://guileless-pegasus-a1837d.netlify.app/)
 
 ---
 
