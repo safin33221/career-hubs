@@ -17,14 +17,14 @@ const JobDetails = () => {
             <div className='text-center py-10'>
                 <h1 className='text-3xl font-bold'>Job Details</h1>
             </div>
-            <div className='flex gap-3 px-6 py-12'>
-                <div className='w-2/3   space-y-5 p-3 '>
+            <div className='flex flex-col lg:flex-row gap-3 px-6 py-12'>
+                <div className=' w-full lg:w-2/3   space-y-5 p-3 '>
                     <h1 className='text-gray-600'><span className='text-black font-bold text-lg'>Job Description:</span>{job_description}</h1>
                     <h1 className='text-gray-600'><span className='text-black font-bold text-lg'>Job responsibility:</span>{job_responsibility}</h1>
                     <h1 className='text-gray-600'><span className='text-black font-bold text-lg'> Educational Requirements: <br /> </span>{educational_requirements}</h1>
                     <h1 className='text-gray-600'><span className='text-black font-bold text-lg'>experiences: <br /></span>{experiences}</h1>
                 </div>
-                <div className='w-1/3' >
+                <div className='lg:w-1/3' >
                     <div className=' shadow-lg p-4  '>
                         <h1 className='text-xl font-bold'>{company_name}</h1>
                         <div className='border-t-2 my-6'></div>
