@@ -8,9 +8,9 @@ import {
 } from "react-router-dom";
 import Root from './Components/Root.jsx';
 import Statices from './Components/Statices.jsx';
-import Jobs from './Components/Jobs.jsx';
 import Blogs from './Components/Blogs.jsx';
 import JobDetails from './Components/JobDetails.jsx';
+import AppliedJob from './Components/AppliedJob.jsx';
 
 
 const router = createBrowserRouter([
@@ -25,7 +25,7 @@ const router = createBrowserRouter([
       },
       {
         path:'/appliedjobs',
-        element:<Jobs></Jobs>
+        element:<AppliedJob></AppliedJob>
       },
       {
         path:'/blogs',

@@ -1,5 +1,6 @@
 import React from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
+import { addJobToLS } from './Utilits/addToDb';
 
 const JobDetails = () => {
     const { id } = useParams()
@@ -7,6 +8,9 @@ const JobDetails = () => {
     const jobData = useLoaderData()
     const job = jobData.find(job => job.id === JobId)
     const { company_name, job_description, salary, job_title, contact_information, job_responsibility, educational_requirements, experiences } = job
+    const handleApplbtn =(id)=>{
+        addJobToLS(id)
+    }
 
     return (
         <div>
@@ -35,7 +39,7 @@ const JobDetails = () => {
                         <h1><span className='text-black font-bold'>Address:</span> {contact_information.address}</h1>
                     </div>
                     <div className='py-5'>
-                        <button className='btn btn-primary flex w-full'> Apply Now</button>
+                        <button onClick={()=>handleApplbtn(id)} className='btn btn-primary flex w-full'> Apply Now</button>
                     </div>
 
 
