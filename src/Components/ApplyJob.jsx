@@ -1,7 +1,8 @@
+import { Link } from "react-router-dom";
 
 
-const ApplyJob = ({job}) => {
-    const {id, logo, job_title, company_name, remote_or_onsite, location, salary } = job
+const ApplyJob = ({ job }) => {
+    const { id, logo, job_title, company_name, remote_or_onsite, location, salary } = job
     return (
         <div>
             <div className="flex gap-10 border-2 shadow-lg my-5 py-6 rounded-lg ">
@@ -22,7 +23,9 @@ const ApplyJob = ({job}) => {
                         </div>
                     </div>
                     <div className="px-10">
-                        <button className="btn btn-primary ">Viwe Details</button>
+                        <Link to={`/jobs/${id}`}>
+                            <button className="btn btn-primary ">Viwe Details</button>
+                        </Link>
                     </div>
                 </div>
             </div>
