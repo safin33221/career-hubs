@@ -6,8 +6,8 @@ import Navbar from "./Navbar";
 const Root = () => {
     return (
         <>
+            <Navbar></Navbar>
             <div className="w-11/12 mx-auto">
-                <Navbar></Navbar>
                 <Outlet></Outlet>
 
             </div>

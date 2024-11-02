@@ -1,5 +1,6 @@
 import React from 'react';
 import user from '../assets/images/user.png'
+import { Link } from 'react-router-dom';
 
 const Banner = () => {
     return (
@@ -13,7 +14,7 @@ const Banner = () => {
                     <p className="py-6">
                         Explore thousands of job opportunities with all the information you need. Its your future. Come find it. Manage all your job application from start to finish.
                     </p>
-                    <button className="btn btn-primary">Get Started</button>
+                    <Link to='/toJobs'><button className="btn btn-primary">Get Started</button></Link>
                 </div>
             </div>
         </div>

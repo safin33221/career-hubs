@@ -25,7 +25,7 @@ const JobDetails = () => {
                     <h1 className='text-gray-600'><span className='text-black font-bold text-lg'>experiences: <br /></span>{experiences}</h1>
                 </div>
                 <div className='lg:w-1/3' >
-                    <div className=' shadow-lg p-4  '>
+                    <div className=' shadow-lg p-4 bg-gradient-to-r from-cyan-50 to-blue-50 rounded-xl  '>
                         <h1 className='text-xl font-bold'>{company_name}</h1>
                         <div className='border-t-2 my-6'></div>
                         <h1 className='text-black font-bold'>Salary: <span className='text-gray-600'>{salary}</span></h1>

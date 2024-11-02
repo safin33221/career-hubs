@@ -1,3 +1,5 @@
+import { toast } from "react-toastify";
+
 const getApplyedJobFromLS =()=>{
     const stroedApplyJob= localStorage.getItem('job-list')
     if(stroedApplyJob){
@@ -12,10 +14,15 @@ const getApplyedJobFromLS =()=>{
 const addJobToLS = id=>{
     const storedJobList = getApplyedJobFromLS()
     if(storedJobList.includes(id)){
-        alert('already added')
+        toast.error('This job already applied',{
+            autoClose:2000
+        })
     }
     else{
         storedJobList.push(id)
+        toast.success('Applied Success',{
+            autoClose:2000
+        })
     }
     const storedJobListStr = JSON.stringify(storedJobList)
     localStorage.setItem('job-list',storedJobListStr)
