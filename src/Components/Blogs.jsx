@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 
 
 const Blogs = () => {
@@ -45,20 +46,26 @@ const Blogs = () => {
   ];
 
   return (
-    <div className="max-w-4xl mx-auto p-6">
-      <h2 className="text-3xl font-semibold text-center text-gray-800 mb-6">Career Hub Vlog Ideas</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
-        {vlogIdeas.map((vlog, index) => (
-          <div
-            key={index}
-            className="bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200"
-          >
-            <h3 className="text-xl font-bold text-gray-900">{vlog.title}</h3>
-            <p className="text-gray-700 mt-2">{vlog.description}</p>
-          </div>
-        ))}
+
+    <>
+      <Helmet>
+        <title>Blogs | Career Hub</title>
+      </Helmet>
+      <div className="max-w-4xl mx-auto p-6">
+        <h2 className="text-3xl font-semibold text-center text-gray-800 mb-6">Career Hub Vlog Ideas</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
+          {vlogIdeas.map((vlog, index) => (
+            <div
+              key={index}
+              className="bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200"
+            >
+              <h3 className="text-xl font-bold text-gray-900">{vlog.title}</h3>
+              <p className="text-gray-700 mt-2">{vlog.description}</p>
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
